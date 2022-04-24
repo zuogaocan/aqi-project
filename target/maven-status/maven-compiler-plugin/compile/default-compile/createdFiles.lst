@@ -1,0 +1,7 @@
+com/zuo/aqiproject/entity/Aqi.class
+com/zuo/aqiproject/Generate.class
+com/zuo/aqiproject/mapper/AqiMapper.class
+com/zuo/aqiproject/controller/AqiController.class
+com/zuo/aqiproject/service/impl/AqiServiceImpl.class
+com/zuo/aqiproject/service/AqiService.class
+com/zuo/aqiproject/AqiProjectApplication.class
