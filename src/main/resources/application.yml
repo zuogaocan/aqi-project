@@ -1,13 +1,19 @@
 spring:
   datasource:
-    url: jdbc:mysql://101.42.90.74/aqi?useUnicode=true&characterEncoding=utf8
-    username: aqi
+    url: jdbc:mysql://localhost/aqi?useUnicode=true&characterEncoding=utf8
+    username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#    servlet:
+#      path: /api
 server:
   port: 8001
 
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
   mapper-locations: static/*Mapper.xml

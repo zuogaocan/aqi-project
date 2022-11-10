@@ -4,4 +4,7 @@
     <select id="findByCity" parameterType="string" resultType="com.zuo.aqiproject.entity.Aqi">
         select * from ${city}
     </select>
+    <select id="findByDate" parameterType="string" resultType="com.zuo.aqiproject.entity.Aqi">
+        select * from ${city}  where date like '%${h_date}%'
+    </select>
 </mapper>

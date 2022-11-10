@@ -15,4 +15,6 @@ import java.util.List;
  */
 public interface AqiService extends IService<Aqi> {
     List<Aqi> findByCity(String city);
+
+    List<Aqi> findByDate(String city,String date);
 }

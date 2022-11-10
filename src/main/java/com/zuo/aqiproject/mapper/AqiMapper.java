@@ -17,4 +17,5 @@ import java.util.List;
 @Mapper
 public interface AqiMapper extends BaseMapper<Aqi> {
     List<Aqi> findByCity(String city);
+    List<Aqi> findByDate(String city,String h_date);
 }

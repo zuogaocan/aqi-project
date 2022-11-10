@@ -26,4 +26,9 @@ public class AqiServiceImpl extends ServiceImpl<AqiMapper, Aqi> implements AqiSe
     public List<Aqi> findByCity(String city) {
         return aqiMapper.findByCity(city);
     }
+
+    @Override
+    public List<Aqi> findByDate(String city,String date) {
+        return aqiMapper.findByDate(city,date);
+    }
 }
